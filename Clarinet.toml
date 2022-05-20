@@ -1,0 +1,14 @@
+[project]
+name = "stacks-apps-registry"
+authors = ["LNow"]
+telemetry = false
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = true
+
+[contracts.registry]
+path = "contracts/registry.clar"
+depends_on = []
